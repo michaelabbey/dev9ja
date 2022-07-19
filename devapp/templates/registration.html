@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block header %}{% include 'header.html' %}{% endblock header %}
+
+{% block content %}
+        <!-- REGISTRATION FORM FILL -->
+        <section id="reg-form">
+            <div class="container reg-header">
+                <h1>Please Read Before Filling the Form</h1>
+                <h3>To join the online class you will need the following</h3>
+            </div>
+            <div class="container reg-boxes">
+              <div class="col">
+                  <i class='bx bx-signal-5'></i>
+                  <h4>Good Internet Connection</h4>
+              </div>
+              <div class="col">
+                  <i class='bx bxl-zoom'></i>
+                  <h4>Zoom app installed</h4>
+              </div>
+              <div class="col">
+                  <i class='bx bx-laptop'></i>
+                  <h4>Laptop or desktop with webcam and headphones</h4>
+              </div>
+            </div>
+            <!-- ///////// form section ////////  -->
+            <div class="container reg-form">
+              <form action="{% url 'registration' %}" method="POST">
+              {% csrf_token %}
+                <div>
+                  <label for="">Email address (of Parent) <span style="color: red;">*</span></label>
+                  <input type="email" class="form-control" name="email" id="" placeholder="e.g paul@gmail.com">
+                </div>
+                <!--  -->
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">First Name(of Child)<span style="color: red;">*</span></label>
+                    <input type="text" name="first_name" class="form-control" id="inputFirstName4" placeholder="First Name">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Last Name <span style="color: red;">*</span></label>
+                    <input type="text" name='last_name' class="form-control" id="inputLastName4" placeholder="Last Name">
+                  </div>
+                </div>
+                <!--  -->
+                <div>
+                  <label for="">Phone Number <span style="color: red;">*</span></label>
+                  <input type="text" class="form-control" name="phone" id="" placeholder="e.g 08000022283">
+                </div>
+                <!--  -->
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Age<span style="color: red;">*</span></label>
+                    <input type="number" class="form-control" name="age" id="" placeholder="Age of Child">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputState">Sex</label>
+                    <input type="text" name='sex' class="form-control" id="inputLastName4" placeholder="Male/Female">
+                  </div>
+                </div>
+                <!--  -->
+                <div>
+                  <label for="">I Am Registering For ?</label>
+                  <input type="text" class="form-control" name="i_am_registering_for" id="" placeholder="Choose Program E.g(Frontend Development)">
+                </div>
+                <!--  -->
+                <div>
+                  <label for="">Location <span style="color: red;">*</span></label>
+                  <input type="text" class="form-control" name="location" id="" placeholder="e.g Lagos..">
+                </div>
+                <!--  -->
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <label for="inputState">Does your child have any experience coding? <span style="color: red;">*</span></label>
+                    <input type="text" name='does_your_child_have_any_experience_coding' class="form-control" id="inputLastName4" placeholder="Yes/No">
+                  </div>
+                </div>
+                <!--  -->
+                <div class="form-group row">
+                  <div class="col-sm-10">
+                    <button type="submit" class="reserve-slot">Reserve Slot...</button>
+                  </div>
+                </div>
+                <!--  -->
+              </form>
+            </div>
+            <!-- ///////// form section ////////  -->
+               
+          </section>
+          <!-- REGISTRATION FORM FILL DONE -->
+{% endblock content %}
+    
+{% block footer %}{% include 'footer.html' %}{% endblock footer %}

@@ -1,0 +1,85 @@
+@media only screen and (min-width: 320px) and (max-width: 450px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        overflow-x: hidden;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    html{
+        font-size: 80%;
+    }
+    #header-section > header > div > nav > a > img{
+        width: 150px;
+    }
+    #bannerimg1{
+        display: none;
+    }
+    #bannerimg2{
+        display: inline-block;
+    }
+    #header-section > header > div > nav > a > img{
+        width: 50px;
+    }
+    .banner{
+        color: var(--white);
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 80vh;
+    
+    
+        background: linear-gradient(rgba(94, 85, 78, 0.331),rgba(76, 73, 71, 0.638)),url(../img/bannerimg.jpeg);
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .banner-content h1{
+        font-size: 30px;
+        padding:0 2rem;
+        font-weight: 600;
+        color:#fff;
+        margin-top:19px;
+    }
+    .banner-content h4{
+        font-size: 25px;
+        font-weight: 700;
+        color:#fff;
+    }
+    .banner-content h5{
+        font-size:17px;
+        padding:0 2rem;
+        color:#fff;
+        margin-top:19px;
+    }
+    .cardsection p{
+        color: var(--white);
+        font-size: 20px;
+    }
+    .class-section{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .engagement-wrapper .col{
+        flex-wrap: wrap;
+    }
+    .engagement-wrapper .col img{
+        display: none;
+    }
+
+    .courseage-program{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+        gap: 2rem;
+    
+        text-align: center;
+        justify-content: center;
+    }
+
+}

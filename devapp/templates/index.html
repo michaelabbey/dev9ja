@@ -1,0 +1,331 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %} | Home{% endblock title %}
+
+<!-- header section -->
+{% block header %}{% include "header.html" %}{% endblock header %}
+<!-- header section done -->
+
+<!-- banner section -->
+{% block banner %}{% include "banner.html" %}{% endblock banner %}
+<!-- banner section done -->
+
+    
+{% block content %}       
+
+    <!-- CLASS SECTION -->
+    <section id="class-section">
+        <div class="container class-section">
+            <div class="container" id="box" data-aos="fade-up" data-aos-duration="1000">
+                <i class='bx bxs-pencil'></i>
+                <h4>1:1 Private Class</h4>
+            </div>
+            <div class="container" id="box" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <i class='bx bxs-group'></i>
+                <h4>Group Class</h4>
+            </div>
+            <div class="container" id="box" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-easing="linear" data-aos-duration="1000"> 
+                <i class='bx bx-building-house'></i>
+                <h4>School Club</h4>
+            </div>
+        </div>
+    </section>
+    <!-- CLASS SECTION DONE -->
+
+    <!-- HERO 3 -->
+    <section id="hero3">
+        <div class="container hero3">
+            <div class="" id="hero3-content">
+                <h1>Start Coding Now!</h1>
+                <p>
+                    We teach kids Web Development, Games, and Robotics. We raise children who are sound in computer technological usage (coding) with adequate financial knowledge.
+                </p>
+                <p>
+                    in this digital world, children need to be taught early the use of computer codes in other to solve problem, create better chances for their future, and taught how to use their finances properly as they grow.
+                </p>
+                <p>
+                    Devnaija Academy will help raise children who are responsible, who creates their own games using computer codes, creating apps, learn basics of building robots and creating websites. we also teach them what to do with the money that comes into their hands and entrepreneural skills
+                </p>
+                <b>
+                    <p style="color:#192a56 ;">
+                        Adults can learn frontend and backend for web development at affordable price too.
+                    </p>
+                </b>
+                <div id="get-started-btn">
+                    <a href="{% url 'registration' %}" target="_blank">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- HERO 3 DONE -->
+
+    <!-- HERO4 -->
+    <section id="hero4">
+        <div class="container hero4-heading">
+            <h2>OUR TRENDING PROGRAMS.</h2>
+        </div>
+        <div class="container hero4">
+            <div class="col">
+                <p>CODING & FINANCIAL LITERACY CLASSES ONLINE & ONSITE (AGES 7 TO 16)</p>
+                <div class="container" id="btn">
+                    <a href="{% url 'registration' %}" target="_blank">Enroll.</a>
+                </div>
+            </div>
+            <div class="col">
+                <p>SUMMER ROBOTICS AND CODING BOOTCAMP ONLINE & ONSITE (AGES 7 TO 16)</p>
+                <div class="container" id="btn">
+                    <a href="{% url 'registration' %}" target="_blank">Enroll.</a>
+                </div>
+            </div>
+            <div class="col">
+                <p>AFTER SCHOOL AND WEEKEND CODING AND ROBOTICS CLASSES ONLINE & ONSITE (AGES 7 TO 16)</p>
+                <div class="container" id="btn">
+                    <a href="{% url 'registration' %}" target="_blank">Enroll.</a>
+                </div>
+            </div>
+            <div class="col">
+                <p>FRONT END AND BACK END PROGRAM FOR ADULT (3 MONTHS)</p>
+                <div class="container" id="btn">
+                    <a href="{% url 'registration' %}" target="_blank">Enroll.</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- HERO4 DONE -->
+
+    <!-- SKILL SECTION -->
+    <section id="skill-demand">
+        <div class="container skill-demand-header">
+            <h2>
+                MOST DEMAND CURRICULUM + SKILL CERTIFICATION
+            </h2>
+            <p>
+                Your student can get started into one of the hottest courses in coding, game dev, robotics, design, math, and more, boosting their <br> portfolio with impressive projects and more.
+            </p>
+            <div class="container"> 
+                <img src="{% static '' %}img/dolidev-tech-icon.png" class="img-fluid" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- SKILL SECTION DONE -->
+
+    <!-- 3 CARD SECTIONS -->
+    <section id="cardsection">
+        <div class="container cardsection">
+            <div class="col card1" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+                <h2>A memorable in-school or holiday bootcamp experience</h2>
+            </div>
+            <div class="col card2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                <h2>Experienced & friendly Tutors</h2>
+                <p>
+                    Our Tutors are mission driven and passionate to see students develop incredible innovation at an early age. They make classes fun and exciting for our Students.
+                </p>
+            </div>
+            <div class="col card3" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                <h2>Small Class Guarantee</h2>
+                <p>
+                    Students progress at their own pace with 1-on-1 or small-group class.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- 3 CARD SECTIONS DONE -->
+
+    <!-- Engagement Options -->
+    <section id="engagement">
+        <div class="container engagement-header">
+            <h2>Our Engagement Options (Virtual or Onsite)</h2>
+        </div>
+        <div class="container engagement-wrapper">
+            <!--  -->
+            <div class="col">
+                <img src="{% static '' %}img/piggy-money.jpeg" class="img-fluid" alt="" srcset="">
+                <div id="engagement-body">
+                    <h3>Our financial literacy classes for kids</h3>
+                    <p>We groom kids to become better financial managers and develop their entrepreneural skills.</p>
+                </div>
+            </div>
+            <!--  -->
+            <div class="col">
+                <img src="{% static '' %}img/kid2.jpg" class="img-fluid" alt="" srcset="">
+                <div id="engagement-body">
+                    <h3>Our small-group classes</h3>
+                    <p> We believe that through collaborations, ideas grow, that’s why we host small group classes for our students.</p>
+                </div>
+            </div>
+            <!--  -->
+        </div>
+        <!-- Button -->
+        <div class="container" id="btn">
+            <a href="{% url 'registration' %}" target="_blank">Enroll for a class</a>
+        </div>
+    </section>
+    <!-- Engagement Options DONE-->
+
+    <!-- Courses for ages 6 - 12 -->
+    <section id="courseage13-16">
+        <div class="container courseage-header">
+            <h1>Courses for ages 7 - 12</h1>
+        </div>
+        <div class="container courseage-program">
+            <div class="col">
+                <img src="{% static '' %}img/html.png" class="img-fluid" alt="">
+                <h4>HTML & CSS</h4>
+            </div>
+            <div class="col">
+                <img src="{% static '' %}img/scratch.png" class="img-fluid" alt="">
+                <h4>Scratch</h4>
+            </div>
+            <div class="col">
+                <img src="{% static '' %}img/piggy-money.jpeg" class="img-fluid" alt="">
+                <h4>Financial Literacy</h4>
+            </div>
+            <div class="col">
+                <img src="{% static '' %}img/robotics.jpg" class="img-fluid" alt="">
+                <h4>Robotics</h4>
+            </div>
+        </div>
+        <!-- Button -->
+        <div class="container" id="btn">
+            <a href="{% url 'registration' %}" target="_blank" >Register for a class</a>
+        </div>
+    </section>
+    <!-- Courses for ages 13 -16 done-->
+    
+    <!-- Courses for ages 13 -16 -->
+    <section id="courseage13-16">
+        <div class="container courseage-header">
+            <h1>Courses for ages 13-16</h1>
+        </div>
+        <div class="container courseage-program">
+            <div class="col">
+                <img src="{% static '' %}img/html.png" class="img-fluid" alt="">
+                <h4>HTML & CSS</h4>
+            </div>
+            <div class="col">
+                <img src="{% static '' %}img/python.png" class="img-fluid" alt="">
+                <h4>Python</h4>
+            </div>
+            <div class="col">
+                <img src="{% static '' %}img/piggy-money.jpeg" class="img-fluid" alt="">
+                <h4>Financial Literacy</h4>
+            </div>
+            <div class="col">
+                <img src="{% static '' %}img/robotics.jpg" class="img-fluid" alt="">
+                <h4>Robotics</h4>
+            </div>
+        </div>
+        <!-- Button -->
+        <div class="container" id="btn">
+            <a href="{% url 'registration' %}" target="_blank" >Register for a class</a>
+        </div>
+    </section>
+    <!-- Courses for ages 13 -16 done-->
+    
+    1<!-- Courses for ages 17+ -->
+    <section id="courseage13-16">
+        <div class="container courseage-header">
+            <h1>Courses for ages 17+</h1>
+        </div>
+        <div class="container courseage-program">
+            <div class="col"  data-aos="fade-up-right" data-aos-duration="1000">
+                <img src="{% static '' %}img/python.png" class="img-fluid" alt="">
+                <h4>Python</h4>
+            </div>
+            <div class="col" data-aos="fade-down-right" data-aos-duration="1000">
+                <img src="{% static '' %}img/Front-End.png" class="img-fluid" alt="">
+                <h4>Front-End</h4>
+            </div>
+            <div class="col" data-aos="fade-down-left" data-aos-duration="1000">
+                <img src="{% static '' %}img/Back-End.jpg" class="img-fluid" alt="">
+                <h4>Back-End</h4>
+            </div>
+            <div class="col" data-aos="fade-up-left" data-aos-duration="1000">
+                <img src="{% static '' %}img/Full-Stack.png" class="img-fluid" alt="">
+                <h4>FullStack</h4>
+            </div>
+        </div>
+        <!-- Button -->
+        <div class="container" id="btn">
+            <a href="{% url 'registration' %}" target="_blank" >Register for a class</a>
+        </div>
+    </section>
+    <!-- Courses for ages 17+ done-->
+    
+    
+
+    <!-- OTHER EVENT -->
+    <section id="otherevent">
+        <div class="container otherevent-header">
+            <h1>Other Events</h1>
+        </div>
+        <div class="container othereventcontent">
+            
+            <!-- 1st box -->
+            <div class="col col1">
+                <!--  -->
+                <div id="img-header">
+                    <img src="{% static '' %}img/codeclub.png" class="img-fluid" alt="visual-studio-code-icon.png">
+                    <h2>CODER'S CLUB</h2>
+                </div>
+                <!--  -->
+                <p>
+                    Devnaija Academy visits schools to raise a Community of budding coders.
+                </p>
+                <ul class="container">
+                    <li><i class='bx bxs-badge-check'></i> coding skill cannot be learnt in a short period. to ensure the kids are grounded in it, We form coding clubs in their school to enable continous learning.</li>
+                    <li><i class='bx bxs-badge-check'></i> Schools can take advantage of this to empower their students with coding and finanacial skills at affordable prices.</li>
+                    
+                </ul>
+                <!-- Button -->
+                <div class="container" id="btn">
+                    <a href="" target="_blank" >Click Here To Join</a>
+                </div>
+            </div>
+
+            <!-- 2nd box -->
+            <div class="col col2">
+                <!--  -->
+                <div id="img-header">
+                    <img src="{% static '' %}img/money.png" class="img-fluid" alt="visual-studio-code-icon.png">
+                    <h2>FINANCIAL LITERACY</h2>
+                </div>
+                <!--  -->
+                <p>
+                    The children will be taught:
+                </p>
+                <ul class="container">
+                    <li><i class='bx bxs-badge-check'></i> Earning, Saving, and Investing</li>
+                    <li><i class='bx bxs-badge-check'></i> How to assess, interpret, question and evaluate finances.</li>
+                    <li><i class='bx bxs-badge-check'></i>  How to understand the nature and use of money.</li>
+                    <li><i class='bx bxs-badge-check'></i> The consequences of financial decisions.</li>
+                    <li><i class='bx bxs-badge-check'></i> Entrepreneurship </li>
+                    <li><i class='bx bxs-badge-check'></i>  How to weigh risks and benefits.</li>
+                    <li><i class='bx bxs-badge-check'></i>  Budgeting.</li>
+                </ul>
+                <!-- Button -->
+                <div class="container" id="btn">
+                    <a href="{% url 'registration' %}" target="_blank" >Enroll Your Kid Now!!!.</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- OTHER EVENT DONE -->
+
+    
+
+
+{% endblock content %}
+
+<!-- contact section  -->
+{% block contact %} {% include "contact.html" %}{% endblock contact %}
+<!-- contact section done -->
+
+<!-- footer section  -->
+{% block footer %}{% include "footer.html" %}{% endblock footer %}
+<!-- footer section done -->
+
+
+    
